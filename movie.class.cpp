@@ -10,17 +10,29 @@ class Movie {
         string setScreenWriter;
 
     public:
-    void setTitle()
-    void setYearReleased()
-    voide setScreenWriter()
+    void setTitle(const string& t) {title = t;}
+    void setYearReleased(int y) {setYearReleased = y;}
+    voide setScreenWriter(const tring& sw) {setScreenWriter = sw;}
 
     voide print() const {
-        
+
     }
-}
+};
 
 
 int main () {
+    ifstream intputFile("input.txt");
+    if (!inputFile) {
+        cout << "Error: coult not open 'input.txt'" << endl;
+        return 0;
+    }
+
+    string title, writer;
+    int year;
+    
+
+
+
     Movie test;
     test.setTitle("something");
     test.setYearReleased("sometihn");
