@@ -12,10 +12,12 @@ class Movie {
     public:
     void setTitle(const string& t) {title = t;}
     void setYearReleased(int y) {setYearReleased = y;}
-    voide setScreenWriter(const tring& sw) {setScreenWriter = sw;}
+    void setScreenWriter(const tring& sw) {setScreenWriter = sw;}
 
-    voide print() const {
-
+    void print() const {
+        cout << "movie" << setScreenWriter << endl;
+        cout << "yearreleased" << setYearReleased << endl;
+        cout << "screenwriter" << title << endl;
     }
 };
 
@@ -29,14 +31,19 @@ int main () {
 
     string title, writer;
     int year;
-    
+// reads firsr three lines
+    getline(inputFile, title);
+    inputFile >> year;
+    inputFile.ignore();
+    getline(intputFile, writer);
 
-
-
+//create/print movie
     Movie test;
+
     test.setTitle("something");
     test.setYearReleased("sometihn");
     test.setScreenWriter("something");
+
     test.print();
 
     return 0;
