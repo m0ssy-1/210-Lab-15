@@ -1,13 +1,22 @@
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 class Movie {
     private:
-
+        string title;
+        int setYearReleased;
+        string setScreenWriter;
 
     public:
-    void--
-    void--
+    void setTitle()
+    void setYearReleased()
+    voide setScreenWriter()
+
+    voide print() const {
+        
+    }
 }
 
 
